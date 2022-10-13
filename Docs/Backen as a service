@@ -1,0 +1,88 @@
+ Nhost is a Backend as a service.
+ an open source alternative to firebase
+ netlify and vercel for the backend
+ everything backend and database related
+ services for backend and databases
+ graphql api
+ serverless functions
+ you've built an application with various components. how to make the Authentication work ? 
+ if you wanna ship the product faster, bring in Nhost, nackend a service to solve your backend related problems
+ instead of writing your own backend like configuring servers and databases, dont need to manage servers and databases.
+ just implement front end logic and connect to the backend.
+ 
+ 4 differences from firebase
+ relation db - postgres instead of document based
+ graphql instead of rest
+ 100% open source
+ self host it
+ easy to deploy backend. develop locally, connect github an, push code and backend is deployed auto
+ 
+ nhost vs serverless apps ( lamda )
+ 
+ serverless on our side !
+ 
+ when and why should someone use BAAS ?
+ 	-generic services
+ 	-large userbase
+ 	-common functionality
+ 	-serverless functions - write custom JS code
+ 	-try not to build custom code on well established tech
+ 	-general building blocks for an app
+ 	-for already established systems, we can just use BAAS
+ 	-old age bank - data is on the mainframe
+ 	
+ can we use nhost with existing applications ?
+ 	-use for new apps
+ 	-migrate is possible but would require extra overhead like a 								 	migration script
+ 	-migrate apples for apples systems
+ 	-no plans for noSQL databases
+ 	-
+how does it help a front end developer ?
+ 	-a baas tool like nhost solves all backend troubles for a fe engineer
+ 	- enables fe engineers to be full stack engineers
+ 
+how does nhost ensure security ?
+ 	-ensures GDPR
+ 	
+what are serverless functions ?
+
+what is the underlying backend used by nhost ?
+	-aws on kubernetes
+	-postgres
+	-serverless functions - aws lambda
+
+cost aspec of BAAS ?
+	-tiers of pricing
+	-free tier - 2 minutes to spinup a backend
+	-all resources on premises
+	-charged based on usage
+	-build more economically
+
+front-end agnostic,
+mobile, web apps all supported, any framework, react-native, flutter, etc. even no-code solution
+
+use a common backend for a web application and a mobile application
+supports 3rd party integrations - using serverless function.
+
+generic services provided - databases, graphql api, authentication - users can login/signin, storage - users can upload files, serverless functions. eg: twitter 
+
+
+
+
+
+
+	
+	
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		

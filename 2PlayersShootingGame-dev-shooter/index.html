@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shootout</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-center bg-secondary">
+    <div class="header bg-dark text-white">
+      <div class="container">
+        <h1 class="heading align-self-center">Kill your enemy game</h1>
+      </div>
+    </div>
+    <div class="container align-center" id="container">
+      <button class="shoot btn btn-danger btn-lg" id="shoot">Shoot</button>
+      <br />
+      <p class="turn" id="turn">
+        TURN :
+        <span id="playerTurn" class="playerTurn" value="1">Player 1</span>
+      </p>
+    </div>
+    <div class="container bg-light">
+      <div class="row">
+        <div class="col-sm">
+          <h3 class="playerName">Player 1</h3>
+          <h3 class="health d-flex flex-column" id="health">
+            Player Health
+            <progress id="playerHP" value="100" max="100"></progress>
+          </h3>
+          <h3 class="dmg" id="dmg">
+            Player Damage : <span class="dmgShow" id="dmgShow"></span>
+          </h3>
+          <h3 class="score" id="score">
+            Player Score : <span class="scoreShow" id="scoreShow"></span>
+          </h3>
+        </div>
+        <div class="col-sm">
+          <h3 class="playerName">Player 2</h3>
+          <h3 class="health d-flex flex-column" id="health">
+            Player Health
+            <progress id="playerHP" value="100" max="100"></progress>
+          </h3>
+          <h3 class="dmg" id="dmg">
+            Player Damage : <span class="dmgShow" id="dmgShow"></span>
+          </h3>
+          <h3 class="score" id="score">
+            Player Score : <span class="scoreShow" id="scoreShow"></span>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

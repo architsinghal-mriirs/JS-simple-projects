@@ -1,0 +1,47 @@
+Introduction 
+All modern web applications have a segregated Backend and Frontend. Consider them as two separate programs which can communicate with each other and external applications using APIs ( Application Programming Interface ). As we move into the era of startups and micro-Software-as-a-Services, there's a huge requirement to ship production-ready software quickly. It is also paramount that the developer overhead is managed optimally. Every ambitious business owner wants their developers to focus more on core business logic for their business applications and less on the setting up of common functionalities. In a new business, speed is of the essence and definitely, it is not optimal that a developer is spending time configuring databases. Here's where BaaS comes in. Backend-as-a-Service is a cloud-based service that solves most generic problems when it comes to the Backend. These services are provided by many providers and for the scope of this blog, we will use the example of nHost. 
+
+What is nHost ?
+nHost is a backend-as-a-service platform. It is a 100% open-source alternative to Google's Firebase. If a developer wishes to outsource most of their backend-related duties then nHost will prove to be one of their strongest allies. For the readers familiar with other hosting platforms like Vercel and Netlify, consider nHost a backend version of the same. 
+
+NHost helps to manage servers, and configure databases. It also ensures scaling and security. A developer wouldn't need to worry about the complications of backend functionalities. Applications would also be secure which makes sure that the sensitive data is not accessible to unauthorized users. This makes sure that most of the development time is spent on creating amazing business applications!
+
+The four main building blocks of nHost Backend-as-a-Service platform:
+
+1. Storage - Postgres(SQL) for data & S3 for files.
+Postgres is one of the most popular databases. It is an open-source relational database for SQL. nHost uses Postgres for data storage. Amazon S3 is used for file storage and downloading. Consider the twitter application, a tweet is essentially user-created data and it is stored in the connected Postgres database. If the user also uploads an image in the tweet, then the image would be stored in the S3 storage. This functionality would usually take a lot of development time but a developer can spin this service in minutes using a BaaS platform like nHost.
+
+2. GraphQL API - Hasura
+In an application, the API's are used for communication between the front-end and the back-end. We will use our front-end code to send a request (query) to the back-end which will then send a response to the request. These API calls are thus used for Create, Read, Update & Delete operations (CRUD). GraphQL API's are made according to the tables of the Postgres Database. Consider the Twitter application. When a user posts a new tweet, they are basically creating new tweet data in the database. This is done through an API call which essentially takes the data entered by the user in the front-end to the database in the back-end. When the user wants to see this tweet, another API call will fetch the data from the back-end database to the front-end.
+It should be noted that a big part of any back-end engineer's job profile is to write API's. This task gets eliminated when one uses nHost.
+   
+3. Authentication - Hasura Auth
+If you have Signed Up and Logged In on a website, then you've experienced authentication. It is one of the most common features we can see across applications. It is required not only to store user-specific data but also to provide the users with a personalized experience. A user would not be able to place an order to their address on Amazon if they don't create an account i.e, authenticate on the Amazon application. We get this functionality out of the box from nHost where the authentication can be done via email, phone, GitHub, Google, Linkedin, and various other services.
+
+4. Serverless Functions - Node.js
+A serverless function is basically a function implementing some business logic without the need to manage its server infrastructure. There is no need for the developer to maintain a physical/virtual machine for the function. It is done for them by a service like Amazon Lambda. These functions are used to run custom code and offer automatic scalability. Consider a business software that manages transactions via serverless functions. If the transactions increase, the scalability of the server is increased automatically by the service provider and vice-versa. Often these service providers make sure that the businesses using these services only need to pay for the resources that they are using. This helps to manage costs more efficiently. For nHost, these functions are not only used for custom code but also to integrate with 3rd party service providers like a payment service ( eg. Stripe ).
+
+What makes nHost unique ?
+1. It uses a relational SQL database - Postgres and not a NoSQL database.
+2. It is 100% open source. This means that it can be self-hosted and developers from all   across the world can contribute to the software.
+3. It uses GraphQL instead of Rest.
+4. The backend deployment is a quick and easy process.
+5. It offers a free tier of usage making it perfect for students, personal projects and aspiring software developers.
+
+When is the best time to use BaaS ?
+As we have discussed, BaaS platforms like nHost solve most of our problems when it comes to generic and common functionalities. If we review the applications in the market today, we would realize that most of them utilize a database, they have an authentication system and they perform CRUD operations. If these are the features of your new application, then it would be hard to look beyond BaaS and nHost. Simply using these BaaS services will enable developers to focus solely on business logic and prevent them from using precious development time on mundane tasks. Even scalability is handled for the business. If we look under the hood, then we will find well-established and battle-tested tech stacks like Postgres, GraphQL, Amazon Lambda etc. for nHost. This ensures that the business need not worry about the quality of software being used in the backend.
+
+Conclusion and Future Scope
+We learnt about Backend-as-a-service and saw the features offered by the Nhost platform. 
+We discussed the reasons behind using such a service and what are the benefits of the same. For more advanced readers, they should visit the links leading to the documentation offered by nHost. Future learning should include how to implement events using serverless functions, using tokens with the authentication and making your own account on nHost to spin-up a backend for your very own application. 
+
+Credits :
+nHost Website
+nHost Github Repository
+Video / Twitter Space by KubeWorld
+KubeWorld
+
+
+
+
+
